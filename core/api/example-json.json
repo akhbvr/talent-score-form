@@ -1,0 +1,194 @@
+[{
+        "title": "Təhsil",
+        "sub_stages": [{
+                "titlee": "Ümumi Suallar",
+                "questions": [{
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Ad",
+                        "answers": [{
+                                "answer": "Akbar"
+                            },
+                            {
+                                "answer": "Rafet"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Soyad",
+                        "answers": [{
+                                "answer": "Adiyev"
+                            },
+                            {
+                                "answer": "Abbasli"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "İş təcrübəniz varmı?",
+                        "answers": [{
+                            "answer": "Bəli"
+                        }]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Hazırda məşğuliyyətiniz?",
+                        "answers": [{
+                                "answer": "Təhsil alıram"
+                            },
+                            {
+                                "answer": "Çalışıram"
+                            },
+                            {
+                                "answer": "İşsizəm"
+                            },
+                            {
+                                "answer": "Təhsil alıram və çalışıram"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Təhsiliniz?",
+                        "answers": [{
+                                "answer": "Bakalavr"
+                            },
+                            {
+                                "answer": "Magistr"
+                            },
+                            {
+                                "answer": "Doktorant"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Aşağıdakılardan hansı sizə uyğundur?",
+                        "answers": [{
+                                "answer": "Əlaçı"
+                            },
+                            {
+                                "answer": "Zərbəçi"
+                            },
+                            {
+                                "answer": "Heç biri"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Orta, texniki ve ali suallar",
+                "questions": [{
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Peşə təhsili üzrə TQDK qəbul balınızı qeyd edin",
+                        "answers": []
+                    },
+                    {
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Bakalavr pilləsi üzrə TQDK qəbul balınızı qeyd edin",
+                        "answers": []
+                    },
+                    {
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Magistratura pilləsi üzrə TQDK qəbul balınızı qeyd edin",
+                        "answers": []
+                    },
+                    {
+                        "question_type": "text",
+                        "hidden": false,
+                        "question": "Doktorantura pilləsi üzrə TQDK qəbul balınızı qeyd edin",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "title": "Olimpiada suallari",
+                "questions": [{
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Olimpiyada qalibi olmusunuzmu?",
+                        "answers": [{
+                                "answer": "Bəli"
+                            },
+                            {
+                                "answer": "Xeyr"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Hansı fənn üzrə olimpiyada qalibi olmusunuz?",
+                        "answers": [{
+                                "answer": "Riyaziyyat"
+                            },
+                            {
+                                "answer": "Azərbaycan dili və Ədəbiyyat"
+                            },
+                            {
+                                "answer": "Tarix"
+                            },
+                            {
+                                "answer": "Coğrafiya"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Ən yüksək hansı mərhələ üzrə olimpiada qalibi olmusunuz?",
+                        "answers": [{
+                                "answer": "Rayon"
+                            },
+                            {
+                                "answer": "Region"
+                            },
+                            {
+                                "answer": "Respublika"
+                            },
+                            {
+                                "answer": "Dünya"
+                            }
+                        ]
+                    },
+                    {
+                        "question_type": "option",
+                        "hidden": false,
+                        "question": "Neçənci yer əldə etmisiniz?",
+                        "answers": [{
+                                "answer": "1-ci yer (Qızıl medal)"
+                            },
+                            {
+                                "answer": "2-ci yer (Gümüş medal)"
+                            },
+                            {
+                                "answer": "3-cü yer (Gümüş medal)"
+                            },
+                            {
+                                "answer": "4-cü yer"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Dil Bilikləri",
+        "sub_stages": [{
+            "title": "Dil Bilikləri",
+            "questions": []
+        }]
+    }
+]

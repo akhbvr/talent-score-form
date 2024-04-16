@@ -1,0 +1,22 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - ./pgdb:/var/lib/postgresql/data
+    ports:
+      -  5432:5432
+    environment:
+      POSTGRES_DB: talent_score
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
