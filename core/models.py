@@ -23,7 +23,7 @@ class SubStage(models.Model):
         Stage,
         verbose_name="Stage",
         on_delete=models.CASCADE,
-        related_name="stages",
+        related_name="sub_stages",
     )
 
     class Meta:
@@ -57,7 +57,7 @@ class Question(models.Model):
         SubStage,
         verbose_name="Sub Stage",
         on_delete=models.CASCADE,
-        related_name="sub_stages",
+        related_name="questions",
     )
 
     class Meta:
@@ -75,7 +75,7 @@ class Answer(models.Model):
         Question,
         verbose_name="Question",
         on_delete=models.CASCADE,
-        related_name="questions",
+        related_name="answers",
     )
 
     class Meta:
@@ -106,7 +106,7 @@ class FormResult(models.Model):
 class FormStage(models.Model):
     id = models.UUIDField(default=uuid4, primary_key=True, editable=False)
     title = models.CharField(max_length=255, verbose_name="Form stage title")
-    form_result = models.ForeignKey(FormResult, on_delete=models.CASCADE, related_name="form_results")
+    form_result = models.ForeignKey(FormResult, on_delete=models.CASCADE, related_name="form_stages")
 
     class Meta:
         verbose_name = "Form stage"
@@ -119,7 +119,7 @@ class FormStage(models.Model):
 class FormSubStage(models.Model):
     id = models.UUIDField(default=uuid4, primary_key=True, editable=False)
     title = models.CharField(max_length=255, verbose_name="Form sub stage title")
-    form = models.ForeignKey(FormStage, on_delete=models.CASCADE, related_name="form_stages")
+    form = models.ForeignKey(FormStage, on_delete=models.CASCADE, related_name="form_sub_stages")
 
     class Meta:
         verbose_name = "Form sub stage"
@@ -132,7 +132,7 @@ class FormSubStage(models.Model):
 class FormQuestion(models.Model):
     id = models.UUIDField(default=uuid4, primary_key=True, editable=False)
     question = models.CharField(max_length=255, verbose_name="Question")
-    form_sub_stage = models.ForeignKey(FormSubStage, on_delete=models.CASCADE, related_name="form_sub_stage")
+    form_sub_stage = models.ForeignKey(FormSubStage, on_delete=models.CASCADE, related_name="form_questions")
 
     class Meta:
         verbose_name = "Form question"
@@ -145,7 +145,7 @@ class FormQuestion(models.Model):
 class FormAnswer(models.Model):
     id = models.UUIDField(default=uuid4, primary_key=True, editable=False)
     answer = models.CharField(max_length=255, verbose_name="Answer")
-    form_question = models.ForeignKey(FormQuestion, on_delete=models.CASCADE, related_name="form_questions")
+    form_question = models.ForeignKey(FormQuestion, on_delete=models.CASCADE, related_name="form_answers")
 
     class Meta:
         verbose_name = "Form answer"

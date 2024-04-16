@@ -14,9 +14,3 @@ services:
       POSTGRES_DB: talent_score
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: 1234
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080

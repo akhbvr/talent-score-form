@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v*cj=1q6$44+fi(bexr!emb1et_ye3csy&yr=w0u%3o^ec)!3z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'nested_admin',
+    'silk'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    # Custom
+    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'talent_score.urls'

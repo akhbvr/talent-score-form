@@ -3,8 +3,6 @@ from nested_admin import (
     NestedModelAdmin,
     NestedTabularInline
 )
-from django.template.loader import render_to_string
-from django.utils.html import format_html
 from nested_admin import NestedModelAdmin
 
 from core.models import (

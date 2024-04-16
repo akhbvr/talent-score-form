@@ -4,19 +4,19 @@ from core.api.views import (
         SubStageAPI,
         QuestionAPI,
         AnswerAPI,
-        testAPI
+        FormResultAPI
     )
 
 
 urlpatterns = [
-    path('stages/', StageAPI.as_view(), name="api_stages"),
+    path('stages/', StageAPI.as_view()),
 
-    path('sub-stages/', SubStageAPI.as_view(), name="api_sub_stages"),
-    path('sub_stages/<uuid:stage_id>/', SubStageAPI.as_view(), name='api_sub_stage'),
+    path('sub-stages/<uuid:stage_id>/', SubStageAPI.as_view()),
+    path('sub-stages/', SubStageAPI.as_view()),
 
-    path('questions/', QuestionAPI.as_view(), name="api_questions"),
-    path('questions/<uuid:sub_stage_id>/', QuestionAPI.as_view(), name="api_question"),
+    path('questions/<uuid:sub_stage_id>/', QuestionAPI.as_view()),
+    path('questions/', QuestionAPI.as_view()),
 
-    path('answers/', AnswerAPI.as_view(), name="api_answers"),
-    path('test/', testAPI.as_view(), name="api_test"),
+    path('answers/', AnswerAPI.as_view()),
+    path('test/', FormResultAPI.as_view()),
 ]
